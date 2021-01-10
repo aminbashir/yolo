@@ -1,0 +1,522 @@
+/* general styling */
+* {
+    margin: 0px;
+    padding: 0px;    
+	box-sizing: border-box;
+}
+  
+/* general styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #cccccc;
+}
+
+/* navbar styling */
+nav {
+    display: flex;
+    justify-content: space-around;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	text-align: right;
+    font-size: 0.9em;
+    background: #000000;
+    padding: 20px;
+    position: sticky;
+}
+  
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0px 5px;
+}
+
+nav a:hover {
+    color: crimson;
+    border: none;
+}
+
+nav .home-link a {
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav .sign-button a{
+    border: solid 2px white;
+    border-radius: 30px;
+    padding: 6px 10px;
+    margin: 8px;
+    font-weight: 600;
+}
+
+nav .sign-button a:hover {
+    border: solid 2px crimson;
+}
+
+/* welcoming information of the page */
+.intro-landing{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.3), #000), url('https://github.com/aminbashir/amin-porfolio/raw/main/amin.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.intro-container{
+    width: 480px;
+    line-height: 2.5em;
+    color: #fff;
+    padding:20px;
+    opacity: .9;
+    position: absolute;
+    top: 40%;
+    margin-left: 30px;
+}
+
+.intro-container #intro-text-1 {
+    font-size: 16pt;
+    padding-bottom: 1.5rem;
+}
+
+.intro-container #intro-text-2 {
+    font-size: 3.75rem;
+    font-weight: bold;
+    color: crimson;
+    padding-bottom: 1.5rem;
+}
+
+.intro-container #intro-text-3 {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+/* about me container */
+.aboutme-container {
+    padding: 10px 30px;
+    background-color: #c0b9b9dc;
+    box-sizing: border-box;
+}
+
+.aboutme-container .aboutme-info-holder{
+    padding: 10px 0px;
+    margin-top: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.aboutme-info-header h2 {
+    font-size: 4rem;
+    color: crimson;
+    font-weight: bolder;
+    padding-bottom: 4px;
+}
+
+
+.aboutme-card{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    background-clip: border-box;
+    margin-bottom: 1rem ;
+}
+
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.column {
+    flex: 50%;;
+    padding: 10px;
+}
+
+.img-wrapper img{
+    width: 100%;
+}
+
+.img-wrapper{
+    flex: 1;
+}
+
+/* Create two equal columns that sits next to each other */
+.column-1 {
+    flex: 30%;;
+    padding: 10px;
+}
+
+.column-2 {
+    flex: 70%;
+    padding: 10px;
+}
+
+.aboutme-info-text p {
+    line-height: 1.52em;
+    font-size: 14pt;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.skills-container{
+    padding: 10px 40px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.skills-container h2{
+    font-size: 4rem;
+    color: crimson;
+    font-weight: bolder;
+    padding-bottom: 4px;
+}
+
+.skills-container .skill-text p {
+    line-height: 1.52em;
+    font-size: 14pt;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.graph-section {
+    margin-top: 4px;
+    margin-bottom: 16px;
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+.skill-graphs {
+    margin-top: 0px;
+}
+
+.graph-spacing {
+    padding-bottom: 15px;
+}
+
+.graph-spacing .graph-title {
+    font-size: 15pt;
+    font-weight: 400;
+}
+
+/* width using percentages */
+.w-80{
+    width: 80%;
+    text-align: center;
+    color:#fff!important;
+    background-color:crimson!important
+}
+
+.w-60{
+    width: 78%;
+    text-align: center;
+    color:#fff!important;
+    background-color:crimson!important
+}
+
+.w-58{
+    width: 66%;
+    text-align: center;
+    color:#fff!important;
+    background-color:crimson!important
+}
+
+/* social media icons */
+.contactme-container {
+    padding: 10px 40px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.contact-icons{
+    padding: 10px;
+}
+
+.contact-icons ul {
+    list-style: none;
+}
+
+.contact-icons ul a {
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.contact-icons ul li {
+    margin-bottom: 8px;
+}
+
+.contact-icons ul li i {
+    line-height: 60px;
+    transition: .6s;
+    color: #000;
+    height: 60px;
+    width: 60px;
+    border: none;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.contact-icons ul li i:hover{
+    background-color: crimson;
+    color: ivory;
+}
+
+form h2{
+    text-align: left;
+    margin-bottom: 10px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: #00b334;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+  }
+  form label {
+    margin-bottom: 5px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  form input,
+  textarea {
+    padding: 15px 20px;
+    margin-bottom: 5px;
+    border: none;
+    outline: none;
+  }
+  form button {
+    width: 100%;
+    background: blue !important;
+    color: white !important;
+    padding: 12px 15px;
+  }
+  form button:hover {
+    background: white !important;
+    color: black !important;
+  }
+  
+  .control-label {
+    display: inline;
+  }
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  }
+
+  .contact-view h2 {
+      text-align: center;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-weight: bolder;
+      color: firebrick;
+  }
+
+.contact-view, table, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.contact-view tr:nth-child(even){background-color: #f2f2f2;}
+tr:hover {background-color: #ddd;}
+
+
+.contact-view th {
+   padding-top: 12px;
+   padding-bottom: 12px;
+   text-align: left;
+   background-color: #4CAF50;
+   color: white;                 
+                }
+                main {
+                    width: 80%;
+                    margin: 50px auto;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+                  /* event card card */
+                  .card {
+                    width: 300px;
+                    height: 450px;
+                    overflow: hidden;
+                    margin: 15px;
+                    border-radius: 5px;
+                    background: white;
+                    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+                    transition: all 0.2s;
+                    cursor: pointer;
+                  }
+                  .card .image {
+                    padding: 0px;
+                    height: 200px;
+                    overflow: hidden;
+                  }
+                  .card .body {
+                    height: 250px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                  }
+                  .card .body {
+                    height: 250px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                  }
+                  .card img {
+                    width: 100%;
+                    transition: 1s;
+                  }
+                  .card div {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10px;
+                  }
+                  .card div .title {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                  }
+                  .card div .title h1 {
+                    font-size: 1.5em;
+                    font-family: cursive;
+                    transform: scale(1.2);
+                    font-weight: bolder;
+                  }
+                 
+                  .card div .title h2 {
+                    font-size: 1.1em;
+                    font-weight: normal;
+                    color: #00b334;
+                  }
+                  .card:hover {
+                    transform: scale(1.1);
+                    box-shadow: 0px 2px 5px 0px rgba(0, 179, 52, 0.5);
+                  }
+                  .card:hover img {
+                    transform: rotate(1deg);
+                  }
+                  button {
+                    outline: none;
+                    border: none;
+                    padding: 8px 14px;
+                    border: 1px solid #00b334;
+                    color: black;
+                    background: white;
+                    transition: 0.5s;
+                    cursor: pointer;
+                  }
+
+/* new event form */
+form {
+    box-sizing: border-box;
+
+}
+
+
+form h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: #00b334;
+  }
+  form div {
+    display: flex;
+    flex-direction: column;
+  }
+  form label {
+    margin-bottom: 5px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  form input,
+  textarea {
+    padding: 15px 20px;
+    margin-bottom: 5px;
+    border: none;
+    outline: none;
+  }
+  form button {
+    width: 100%;
+    background: blue !important;
+    color: white !important;
+    padding: 12px 15px;
+  }
+  form button:hover {
+    background: white !important;
+    color: black !important;
+  }
+  
+  .control-label {
+    display: inline;
+  }
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+}
+  
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.booking-view th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;                 
+                 }
+                 main {
+                     width: 80%;
+                     margin: 50px auto;
+                     display: flex;
+                     flex-wrap: wrap;
+                     justify-content: center;
+                 
+}
